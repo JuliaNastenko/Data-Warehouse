@@ -7,7 +7,713 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header container">
+      <div class="logo">
+        <div></div>
+        <div></div>
+      </div>
+      <a class="header__search" href="#">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <mask id="path-1-inside-1" fill="white">
+            <path d="M19.7997 18.7904L12.684 11.6748C15.1833 8.61811 14.7314 4.11413 11.6747 1.61485C8.61809 -0.884436 4.11406 -0.432541 1.61478 2.62412C-0.884514 5.68077 -0.432618 10.1848 2.62404 12.6841C5.25691 14.8368 9.04188 14.8368 11.6747 12.6841L18.7904 19.7997C19.074 20.0736 19.5258 20.0657 19.7997 19.7821C20.0668 19.5055 20.0668 19.067 19.7997 18.7904ZM7.16081 12.8711C4.00863 12.8675 1.45413 10.3131 1.45062 7.16088C1.45062 4.00724 4.00717 1.45069 7.16081 1.45069C10.3145 1.45069 12.871 4.00724 12.871 7.16088C12.871 10.3145 10.3145 12.8711 7.16081 12.8711Z">
+          </mask>
+          <path
+            d="M19.7997 18.7904L22.677 16.0118C22.6609 15.995 22.6445 15.9784 22.6281 15.962L19.7997 18.7904ZM12.684 11.6748L9.58737 9.14286C8.28689 10.7334 8.40283 13.0505 9.8556 14.5032L12.684 11.6748ZM2.62404 12.6841L0.092075 15.7807L0.0920962 15.7807L2.62404 12.6841ZM11.6747 12.6841L14.5032 9.85564C13.0504 8.40289 10.7333 8.28695 9.1428 9.58742L11.6747 12.6841ZM18.7904 19.7997L15.962 22.6281C15.9784 22.6446 15.9949 22.6608 16.0116 22.6769L18.7904 19.7997ZM19.7997 19.7821L22.6769 22.5609L22.677 22.5608L19.7997 19.7821ZM7.16081 12.8711L7.1563 16.8711H7.16081V12.8711ZM1.45062 7.16088H-2.54938L-2.54938 7.16534L1.45062 7.16088ZM22.6281 15.962L15.5124 8.84637L9.8556 14.5032L16.9712 21.6188L22.6281 15.962ZM15.7807 14.2068C19.6783 9.43981 18.9736 2.41584 14.2067 -1.48178L9.14278 4.71148C10.4892 5.81242 10.6883 7.79641 9.58737 9.14286L15.7807 14.2068ZM14.2067 -1.48178C9.43979 -5.37947 2.41577 -4.67469 -1.48185 0.0921427L4.7114 5.15609C5.81236 3.80961 7.79638 3.6106 9.14278 4.71148L14.2067 -1.48178ZM-1.48185 0.0921427C-5.37955 4.85907 -4.67477 11.8831 0.092075 15.7807L5.15601 9.58744C3.80953 8.48649 3.61052 6.50248 4.7114 5.15609L-1.48185 0.0921427ZM0.0920962 15.7807C4.19807 19.1379 10.1007 19.1379 14.2067 15.7807L9.1428 9.58742C7.98303 10.5357 6.31576 10.5357 5.15599 9.58742L0.0920962 15.7807ZM8.84632 15.5125L15.962 22.6281L21.6188 16.9713L14.5032 9.85564L8.84632 15.5125ZM16.0116 22.6769C17.8842 24.4854 20.8683 24.4335 22.6769 22.5609L16.9224 17.0034C18.1833 15.6979 20.2637 15.6617 21.5692 16.9225L16.0116 22.6769ZM22.677 22.5608C24.441 20.7341 24.441 17.8384 22.677 16.0118L16.9223 21.569C15.6926 20.2956 15.6926 18.2769 16.9223 17.0035L22.677 22.5608ZM7.16533 8.87107C6.2187 8.87 5.45167 8.10289 5.45062 7.15642L-2.54938 7.16534C-2.54341 12.5232 1.79856 16.865 7.1563 16.8711L7.16533 8.87107ZM5.45062 7.16088C5.45062 6.21638 6.2163 5.4507 7.16081 5.4507V-2.54931C1.79803 -2.54931 -2.54938 1.79809 -2.54938 7.16088H5.45062ZM7.16081 5.4507C8.10533 5.4507 8.87101 6.21638 8.87101 7.16088H16.871C16.871 1.79809 12.5236 -2.54931 7.16081 -2.54931V5.4507ZM8.87101 7.16088C8.87101 8.10538 8.10533 8.87106 7.16081 8.87106V16.8711C12.5236 16.8711 16.871 12.5237 16.871 7.16088H8.87101Z"
+            fill="#9C69E2"
+            mask="url(#path-1-inside-1)"
+          >
+        </svg>
+      </a>
+      <div id="burger-menu" class="header__burger">
+        <span></span>
+      </div>
+      <div class="header__menu" id="mob-menu">
+        <nav class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">
+              About
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Help
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Features
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Signup
+            </a>
+          </li>
+        </nav>
+        <button class="btn">
+          Request Demo
+          <svg
+            class="btn__rectangle"
+            width="23"
+            height="2"
+            viewBox="0 0 23 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.0769 1.00098H1.08765"
+              stroke="#9C69E2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+          </svg>
+          <svg
+            class="btn__triangle"
+            width="9"
+            height="16"
+            viewBox="0 0 9 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.08012 15.001L7.0769 8.00098L1.08013 1.00098"
+              stroke="#9C69E2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main  id="main-section">
+      <section class="slider container">
+        <div class="item">
+          <img src="./images/slider.jpg" alt="">
+          <div class="slider-text">
+            <h1>Save your data<br>storage here.</h1>
+            <p>Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.</p>
+            <a class="button-learn" href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/slider.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <img src="./images/slider.jpg" alt="">
+          <div class="slider-text">
+            <h1>Save your data<br>storage here.</h1>
+            <p>Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.</p>
+            <a class="button-learn" href="#">Learn more</a>
+          </div>
+        </div>
+
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+      </section>
+
+      <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+      </div>
+      <section class="features container">
+        <div class="features__info">
+          <h1>Features</h1>
+          <p>Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
+        </div>
+        <div class="features__blocks">
+          <div class="features__block">
+            <img
+              src="./images/features1.png"
+              alt=""
+              class="block__img1"
+            >
+            <div class="block__text">
+              <h3>Search Data</h3>
+              <p>Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
+              <a href="#">Learn more
+                <svg
+                  class="rectangle"
+                  width="23"
+                  height="2"
+                  viewBox="0 0 23 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.0769 1.00098H1.08765"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                </svg>
+                <svg
+                  class="triangle"
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.08012 15.001L7.0769 8.00098L1.08013 1.00098"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                </svg>
+              </a>
+            </div>
+            <svg
+              class="block__background"
+              width="433"
+              height="358"
+              viewBox="0 0 433 358"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                d="M44.2134 41.74C48.2488 17.6491 69.0998 0.000244141 93.5263 0.000244141H383C410.614 0.000244141 433 22.386 433 50.0002V308C433 335.614 410.614 358 383 358H50.3093C19.3958 358 -4.11074 330.229 0.996361 299.74L44.2134 41.74Z"
+                fill="#68C9BA"
+              >
+            </svg>
+            <div class="ellipse ellipse1-1">
+              <svg
+                width="193"
+                height="138"
+                viewBox="0 0 193 138"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M182.746 79.0296C208.457 108.207 178.098 136.381 124.666 137.141C18.4364 130.137 -5.53526 36.0075 2.49308 14.9029C10.5214 -6.20174 34.427 -6.77777 69.8468 36.2152C105.267 79.2082 150.608 42.5574 182.746 79.0296Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+              </svg>
+            </div>
+            <div class="ellipse ellipse1-2">
+              <svg
+                width="35"
+                height="24"
+                viewBox="0 0 35 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  rx="16.8402"
+                  ry="9.95502"
+                  transform="matrix(0.935268 0.353941 -0.353609 0.935393 17.422 12.1504)"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+              </svg>
+            </div>
+          </div>
+          <div class="features__block">
+            <img
+              src="./images/features2.png"
+              alt=""
+              class="block__img2"
+            >
+            <div class="block__text">
+              <h3>Security Code</h3>
+              <p>Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.</p>
+              <a href="#">Learn more
+                <svg
+                  class="rectangle"
+                  width="23"
+                  height="2"
+                  viewBox="0 0 23 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.0769 1.00098H1.08765"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                </svg>
+                <svg
+                  class="triangle"
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.08012 15.001L7.0769 8.00098L1.08013 1.00098"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                </svg>
+              </a>
+            </div>
+            <svg
+              class="block__background"
+              width="433"
+              height="358"
+              viewBox="0 0 433 358"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                d="M44.2134 41.74C48.2488 17.6491 69.0998 0.000244141 93.5263 0.000244141H383C410.614 0.000244141 433 22.386 433 50.0002V308C433 335.614 410.614 358 383 358H50.3093C19.3958 358 -4.11074 330.229 0.996361 299.74L44.2134 41.74Z"
+                fill="#2D9CDB"
+              >
+            </svg>
+            <div class="ellipse ellipse2-1">
+              <svg
+                width="300"
+                height="229"
+                viewBox="0 0 300 229"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M58.6173 226.712C-1.88496 238.919 -16.5016 174.795 24.8671 100.691C118.814 -39.8767 267.188 1.86546 289.815 29.6612C312.443 57.457 294.259 90.7983 207.066 105.395C119.873 119.991 134.245 211.454 58.6173 226.712Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+              </svg>
+            </div>
+            <div class="ellipse ellipse2-2">
+              <svg
+                width="61"
+                height="44"
+                viewBox="0 0 61 44"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  rx="30.9105"
+                  ry="18.2725"
+                  transform="matrix(0.935269 0.353938 -0.353612 0.935392 30.4212 22.0324)"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+              </svg>
+            </div>
+          </div>
+          <div class="features__block">
+            <img
+              src="./images/features3.png"
+              alt=""
+              class="block__img3"
+            >
+            <div class="block__text">
+              <h3>Print Out</h3>
+              <p>Print out service gives you convenience if someday you need print data, just edit it all and just print it.</p>
+              <a href="#">Learn more
+                <svg
+                  class="rectangle"
+                  width="23"
+                  height="2"
+                  viewBox="0 0 23 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.0769 1.00098H1.08765"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                </svg>
+                <svg
+                  class="triangle"
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.08012 15.001L7.0769 8.00098L1.08013 1.00098"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                </svg>
+              </a>
+            </div>
+            <svg
+              class="block__background"
+              width="433"
+              height="358"
+              viewBox="0 0 433 358"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                d="M44.2134 41.74C48.2488 17.6491 69.0998 0.000244141 93.5263 0.000244141H383C410.614 0.000244141 433 22.386 433 50.0002V308C433 335.614 410.614 358 383 358H50.3093C19.3958 358 -4.11074 330.229 0.996361 299.74L44.2134 41.74Z"
+                fill="#F063B8"
+              >
+            </svg>
+            <div class="ellipse ellipse3">
+              <svg
+                width="65"
+                height="51"
+                viewBox="0 0 65 51"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="32.8069"
+                  cy="25.427"
+                  rx="34.0274"
+                  ry="20.1071"
+                  transform="rotate(150 32.8069 25.427)"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+              </svg>
+            </div>
+          </div>
+          <div class="features__block">
+            <img
+              src="./images/features4.png"
+              alt=""
+              class="block__img4"
+            >
+            <div class="block__text">
+              <h3>24 Hours Access</h3>
+              <p>Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.</p>
+              <a href="#">Learn more
+                <svg
+                  class="rectangle"
+                  width="23"
+                  height="2"
+                  viewBox="0 0 23 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.0769 1.00098H1.08765"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                </svg>
+                <svg
+                  class="triangle"
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.08012 15.001L7.0769 8.00098L1.08013 1.00098"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                </svg>
+              </a>
+            </div>
+            <svg
+              class="block__background"
+              width="433"
+              height="358"
+              viewBox="0 0 433 358"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                d="M44.2134 41.74C48.2488 17.6491 69.0998 0.000244141 93.5263 0.000244141H383C410.614 0.000244141 433 22.386 433 50.0002V308C433 335.614 410.614 358 383 358H50.3093C19.3958 358 -4.11074 330.229 0.996361 299.74L44.2134 41.74Z"
+                fill="#9C69E2"
+              >
+            </svg>
+            <div class="ellipse ellipse4">
+              <svg
+                width="211"
+                height="151"
+                viewBox="0 0 211 151"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.2072 64.9707C-16.824 33.2052 16.2744 2.53268 74.5292 1.70523C190.347 9.33047 216.482 111.808 207.729 134.785C198.976 157.761 172.913 158.388 134.296 111.582C95.6794 64.7763 46.2463 104.677 11.2072 64.9707Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <section class="footer__options">
+        <div class="info__text">
+          <h1>Try for free!</h1>
+          <p>Get limited 1 week free try our features!</p>
+        </div>
+        <div class="footer__button">
+          <a class="button-learn" href="#">Learn more</a>
+          <button class="btn" id="popup-btn">
+            Request Demo
+            <svg
+              class="btn__rectangle"
+              width="23"
+              height="2"
+              viewBox="0 0 23 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.0769 1.00098H1.08765"
+                stroke="#9C69E2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+            </svg>
+            <svg
+              class="btn__triangle"
+              width="9"
+              height="16"
+              viewBox="0 0 9 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.08012 15.001L7.0769 8.00098L1.08013 1.00098"
+                stroke="#9C69E2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="footer__info">
+        <div class="footer__contact">
+          <div class="footer__logo">
+            <div class="logo">
+              <div></div>
+              <div></div>
+            </div>
+            <h3>DataWare</h3>
+          </div>
+          <p>Warehouse Society, 234<br>Bahagia Ave Street PRBW 29281</p>
+          <p>info@warehouse.project<br>1-232-3434 (Main)</p>
+        </div>
+        <div class="footer__about">
+          <h3>About</h3>
+          <nav class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Profile</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Features</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Careers</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">DW News</a>
+            </li>
+          </nav>
+        </div>
+        <div class="footer__about">
+          <h3>Help</h3>
+          <nav class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Support</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Sign up</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Guide</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Reports</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Q&A</a>
+            </li>
+          </nav>
+        </div>
+        <div class="footer__about">
+          <h3>Social Media</h3>
+          <div class="footer__media">
+            <a href="https://www.facebook.com/">
+              <div class="circle">
+                <svg
+                  width="10"
+                  height="21"
+                  viewBox="0 0 10 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.37004 20.4882V10.2429H9.20407L9.57964 6.7123H6.37004L6.37486 4.94521C6.37486 4.02438 6.46253 3.53098 7.78786 3.53098H9.55958V0H6.72515C3.32054 0 2.12221 1.71271 2.12221 4.59296V6.7127H0V10.2433H2.12221V20.4882H6.37004Z"
+                    fill="white"
+                  >
+                </svg>
+              </div>
+            </a>
+            <a href="https://twitter.com/">
+              <div class="circle">
+                <svg
+                  width="19"
+                  height="16"
+                  viewBox="0 0 19 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.90955 4.6592L8.86992 4.00755C8.75112 2.31869 9.79385 0.776082 11.4438 0.177714C12.051 -0.0350812 13.0805 -0.0616806 13.7537 0.124515C14.0176 0.204313 14.5193 0.470228 14.8756 0.709623L15.5224 1.14847L16.2351 0.922418C16.6311 0.802682 17.1591 0.603225 17.3966 0.470229C17.621 0.350571 17.819 0.284033 17.819 0.323971C17.819 0.550027 17.3307 1.32133 16.9215 1.74684C16.3671 2.34529 16.5255 2.39849 17.6475 1.9995C18.3206 1.77344 18.3338 1.77344 18.2018 2.0261C18.1226 2.15909 17.7134 2.62454 17.2778 3.05006C16.5387 3.7815 16.4991 3.8613 16.4991 4.473C16.4991 5.41716 16.0503 7.38528 15.6015 8.46244C14.77 10.4838 12.9881 12.5715 11.2062 13.6221C8.69836 15.0982 5.35889 15.4705 2.54747 14.6062C1.61033 14.3136 0 13.5689 0 13.436C0 13.396 0.488344 13.3428 1.08236 13.3296C2.32307 13.303 3.56379 12.9572 4.61973 12.3455L5.33255 11.92L4.51414 11.6407C3.3526 11.2417 2.30987 10.3242 2.04592 9.4598C1.96666 9.18054 1.99308 9.1672 2.73224 9.1672L3.49782 9.15394L2.85105 8.84809C2.08547 8.46244 1.38593 7.81079 1.04273 7.14589C0.791917 6.66718 0.475213 5.45702 0.567598 5.36396C0.593938 5.3241 0.871172 5.40382 1.18795 5.51022C2.09868 5.84267 2.21748 5.76288 1.68951 5.20437C0.699533 4.19375 0.395958 2.691 0.871172 1.26813L1.09557 0.629824L1.96666 1.49419C3.74864 3.23625 5.84731 4.27355 8.24956 4.5794L8.90955 4.6592Z"
+                    fill="white"
+                  >
+                </svg>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/">
+              <div class="circle">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00179 3.8978C5.73162 3.8978 3.9005 5.72933 3.9005 8C3.9005 10.2707 5.73162 12.1022 8.00179 12.1022C10.2719 12.1022 12.1031 10.2707 12.1031 8C12.1031 5.72933 10.2719 3.8978 8.00179 3.8978ZM8.00179 10.667C6.53475 10.667 5.33542 9.47094 5.33542 8C5.33542 6.52906 6.53118 5.33304 8.00179 5.33304C9.47239 5.33304 10.6682 6.52906 10.6682 8C10.6682 9.47094 9.46882 10.667 8.00179 10.667ZM13.2274 3.73C13.2274 4.26197 12.7991 4.68682 12.2708 4.68682C11.739 4.68682 11.3142 4.2584 11.3142 3.73C11.3142 3.20161 11.7426 2.77318 12.2708 2.77318C12.7991 2.77318 13.2274 3.20161 13.2274 3.73ZM15.9438 4.7011C15.8831 3.41939 15.5904 2.28406 14.6516 1.34866C13.7165 0.413254 12.5814 0.120495 11.2999 0.0562312C9.97925 -0.0187437 6.02075 -0.0187437 4.70006 0.0562312C3.4222 0.116925 2.28712 0.409684 1.34835 1.34509C0.409593 2.28049 0.120468 3.41582 0.0562186 4.69753C-0.0187395 6.01852 -0.0187395 9.97791 0.0562186 11.2989C0.116899 12.5806 0.409593 13.7159 1.34835 14.6513C2.28712 15.5867 3.41863 15.8795 4.70006 15.9438C6.02075 16.0187 9.97925 16.0187 11.2999 15.9438C12.5814 15.8831 13.7165 15.5903 14.6516 14.6513C15.5868 13.7159 15.8795 12.5806 15.9438 11.2989C16.0187 9.97791 16.0187 6.02209 15.9438 4.7011ZM14.2376 12.7163C13.9592 13.416 13.4202 13.9551 12.717 14.2372C11.664 14.6549 9.16542 14.5585 8.00179 14.5585C6.83815 14.5585 4.33597 14.6513 3.28656 14.2372C2.58695 13.9587 2.04796 13.4196 1.76598 12.7163C1.34835 11.6631 1.44473 9.1639 1.44473 8C1.44473 6.8361 1.35192 4.33337 1.76598 3.28372C2.04439 2.58396 2.58338 2.04485 3.28656 1.7628C4.33954 1.34509 6.83815 1.44148 8.00179 1.44148C9.16542 1.44148 11.6676 1.34866 12.717 1.7628C13.4166 2.04128 13.9556 2.58039 14.2376 3.28372C14.6552 4.33694 14.5588 6.8361 14.5588 8C14.5588 9.1639 14.6552 11.6666 14.2376 12.7163Z"
+                    fill="white"
+                  >
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="footer__copyright">© Datawarehouse™, 2020. All rights reserved.<br>Company Registration Number: 21479524.</section>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__body" id="content">
+        <div class="popup__content">
+          <h1>Request Demo</h1>
+          <form>
+            <div class="popup__form">
+              <div class="popup__info">
+                <label class="popup__label" for="name">
+                  <input
+                    type="text"
+                    required
+                    class="popup__input"
+                    placeholder="Name"
+                    id="name"
+                  >
+                </label>
+                <label class="popup__label" for="email">
+                  <input
+                    type="email"
+                    required
+                    class="popup__input"
+                    placeholder="Email"
+                    id="email"
+                  >
+                </label>
+                <label class="popup__label" for="web">
+                  <input
+                    type="text"
+                    required
+                    class="popup__input"
+                    placeholder="Web"
+                    id="web"
+                  >
+                </label>
+              </div>
+              <div class="popup__message">
+                <div></div>
+                <div></div>
+                <label class="popup__label" for="message">
+                  <textarea
+                    type="textarea"
+                    required
+                    class="popup__textarea"
+                    placeholder="Message"
+                    id="message"
+                 ></textarea>
+                </label>
+              </div>
+            </div>
+            <button class="popup__btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlide() {
+        showSlides(slideIndex += 1);
+      };
+
+      function minusSlide() {
+        showSlides(slideIndex -= 1);
+      };
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      };
+
+      function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("item");
+        const dots = document.getElementsByClassName("slider-dots_item");
+
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      };
+    </script>
   </body>
 </html>
